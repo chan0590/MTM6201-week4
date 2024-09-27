@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTM6201 - Week 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Images</h1>
+        <!-- <img src="https://dummyimage.com/600x200" alt="placeholder image"> -->
+        <section>
+            <h2>Same image different size</h2>
+            <img
+            srcset="https://dummyimage.com/320x200 320w,
+                    https://dummyimage.com/640x400 640w,
+                    https://dummyimage.com/1024x600 1024w"
+            sizes=" (max-width: 320px) 320px,
+                    (max-width: 640px) 640px,
+                    (max-width: 1024px) 1024px"
+            src="https://dummyimage.com/640x400"
+            alt="placeholder image">
+        </section>
+    </div>
+</body>
+</html>
